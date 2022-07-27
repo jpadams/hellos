@@ -13,7 +13,6 @@ import (
 
 dagger.#Plan & {
 	actions: {
-		// Hello world
 		hello: bash.#Run & {
 			input: actions._alpine.output
 			script: contents: "echo Hello Outer Space"
